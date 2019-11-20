@@ -1,0 +1,1 @@
+﻿Unregister-ScheduledTask -TaskName 'Change Wallpaper' -Confirm:$false
