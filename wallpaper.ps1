@@ -1,4 +1,4 @@
-﻿$BasePath = "C:\Users\NKOOLS98\OneDrive - Conclusion\Afbeeldingen\Wallpapers\"
+﻿$BasePath = $env:USERPROFILE + "\WeekdayWallpaper"
  
 $Day = Get-Date -Format dddd
 
