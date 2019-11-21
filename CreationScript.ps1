@@ -11,6 +11,7 @@
     $Path = $env:USERPROFILE + "\WeekdayWallpaper\"
     $ScriptLocation = $path + $FileNames[7]
     $Uri = "https://github.com/BlaxadowFire/JapaneseBackground/blob/master/"
+    $Arguments = '-window hidden -NonInteractive -NoLogo -File "' +  $ScriptLocation + '"'
 #SECTION VARIABLES END
 
 #SECTION FUNCTIONS
@@ -62,7 +63,7 @@
 
         #Create Task
         $TaskName = 'Change Wallpaper'
-        $Action = New-ScheduledTaskAction -Execute 'powershell.exe'-Argument '-window hidden -NonInteractive -NoLogo -File $ScriptLocation'
+        $Action = New-ScheduledTaskAction -Execute 'powershell.exe'-Argument $Arguments
         $Trigger = New-ScheduledTaskTrigger -AtLogOn
         $Settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoingOnBatteries
         $Principal = New-ScheduledTaskPrincipal -LogonType Interactive -UserId $sid -Id 'Author' -RunLevel Highest
