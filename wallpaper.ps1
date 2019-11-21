@@ -1,4 +1,4 @@
-﻿$BasePath = $env:USERPROFILE + "\WeekdayWallpaper"
+﻿$BasePath = $env:USERPROFILE + "\WeekdayWallpaper\"
  
 $Day = Get-Date -Format dddd
 
