@@ -5,7 +5,7 @@ $Day = Get-Date -Format dddd
 
 
 
-$FileName = $Day + ".jpg"
+$FileName = $Day + ".bmp"
 $FilePath = $BasePath + $FileName
 
 Function Set-WallPaper($imagePath)
@@ -28,3 +28,5 @@ Function Set-WallPaper($imagePath)
  Write-Output "$FilePath"
  Set-WallPaper -imagePath "$FilePath"
  Set-LockScreen -imagePath "$FilePath"
+
+ cmd /c pause | out-null
