@@ -7,6 +7,13 @@
     "Friday.jpg",
     "Saturday.jpg",
     "Sunday.jpg",
+    "Monday.bmp",
+    "Tuesday.bmp",
+    "Wednesday.bmp",
+    "Thursday.bmp",
+    "Friday.bmp",
+    "Saturday.bmp",
+    "Sunday.bmp",
     "wallpaper.ps1")
     $Path = $env:USERPROFILE + "\WeekdayWallpaper\"
     $ScriptLocation = $path + $FileNames[7]
